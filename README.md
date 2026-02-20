@@ -7,7 +7,7 @@ This calculator works smoothly on desktop, tablet, and mobile devices.
 
 ## 🚀 Live Demo
 
-https://calculator-aadi.vercel.app
+calculator-aadi.vercel.app
 
 ---
 
