@@ -30,23 +30,13 @@ You can host it using GitHub Pages.
 
 ---
 
-## 📂 Project Structure
-
-```
-Responsive-Calculator/
-│
-├── index.html
-└── README.md
-```
 
 ---
 
 ## 📸 Screenshot
 
 
-```
 ![Calculator Screenshot](screenshot.png)
-```
 
 ---
 
