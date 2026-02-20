@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+  
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+}
+
+/* Calculator Box */
+.calculator{
+    width: 100%;
+    max-width: 400px;
+    min-height: 90vh;
+    background-color: #FFFAF0;
+    border: 2px solid black;
+    border-radius: 15px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Display */
+input{
+    width: 100%;
+    height: 80px;
+    background: transparent;
+    border: none;
+    font-size: 2.5rem;
+    text-align: right;
+    outline: none;
+    margin-bottom: 10px;
+}
+
+/* Buttons Grid */
+.buttons{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    flex: 1;
+}
+
+button{
+    height: 70px;
+    border-radius: 12px;
+    border: 1px solid #918a8a;
+    background-color: white;
+    font-size: 1.3rem;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    transition: 0.2s;
+}
+
+button:active {
+    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.2);
+    transform: translateY(2px);
+}
+
+.operator{
+    background-color: #BDB76B;
+}
+
+.equal{
+    background-color: #008B8B;
+    grid-column: span 2;
+    color: white;
+}
+
+/* Mobile Responsive */
+@media (max-width: 480px){
+
+    .calculator{
+        max-width: 95%;
+        padding: 10px;
+    }
+
+    input{
+        height: 60px;
+        font-size: 1.8rem;
+    }
+
+    button{
+        height: 60px;
+        font-size: 1rem;
+    }
+
+}
+</style>
+<body>
+    <div class="calculator">
+        <input type="text" id="display" readonly value="0">
+        <div class="buttons">
+            <button class = "operator">%</button>
+            <button class = "operator">AC</button>
+            <button class = "operator">DEL</button>
+            <button class = "operator">/</button>
+            <button>7</button>
+            <button>8</button>
+            <button>9</button>
+            <button class = "operator">*</button>
+            <button>4</button>
+            <button>5</button>
+            <button>6</button>
+            <button class = "operator">-</button>
+            <button>1</button>
+            <button>2</button>
+            <button>3</button>
+            <button class = "operator">+</button>
+            <button>0</button>
+            <button>.</button>
+            <button class = "equal">=</button>
+        </div>
+    </div>
+<script src="script.js"></script>
+</body>
+</html>
